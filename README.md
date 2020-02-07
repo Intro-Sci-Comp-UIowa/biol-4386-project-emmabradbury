@@ -5,7 +5,7 @@ In this study, the Bureau of Justice Statistics took a census and compiled data 
 Suzanne M. Strong, Ph.D., Ramona R. Rantala, Bureau of Justice Statistics, Tracey Kyckelhahn, Ph.D., Former BJS Statistician. September 15, 2016. NCJ 249803.
 
 ### Figure to Reproduce 
-![Figure 1](https://www.bjs.gov/content/pub/pdf/cpsc12.pdf)
+![Figure 1]()  https://www.bjs.gov/content/pub/pdf/cpsc12.pdf
 *Sorry the image is right on that first page but I could not figure out how to insert just an image file*
 
 #### Data Availability
