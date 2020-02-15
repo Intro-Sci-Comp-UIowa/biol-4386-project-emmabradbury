@@ -1,0 +1,1 @@
+Data was obtained from https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 on February 14, 2020 through prior research. It should be downloaded as a CSV but I will be going to office hours or asking for help if I did not do it right. Will work more on it this weekend and see if I can figure it out better and download the rest of the data. 
