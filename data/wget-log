@@ -1,0 +1,11 @@
+--2020-02-14 18:13:52--  https://www.bjs.gov/index.cfm?ty=pbdetail
+Resolving www.bjs.gov (www.bjs.gov)... 149.101.82.172, 2607:f330:5fa1:1020::ac
+Connecting to www.bjs.gov (www.bjs.gov)|149.101.82.172|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 160562 (157K) [text/html]
+Saving to: ‘index.cfm?ty=pbdetail’
+
+index.cfm?ty=pbdeta   0%[                    ]       0  --.-KB/s               index.cfm?ty=pbdeta 100%[===================>] 156.80K  --.-KB/s    in 0.1s    
+
+2020-02-14 18:13:52 (1.05 MB/s) - ‘index.cfm?ty=pbdetail’ saved [160562/160562]
+
