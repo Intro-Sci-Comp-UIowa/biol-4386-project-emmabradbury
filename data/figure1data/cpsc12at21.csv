@@ -1,0 +1,31 @@
+Bureau of Justice Statistics,,,,,,,,,,
+Filename: cpsc12at12.csv,,,,,,,,,,
+"Appendix table 21. Stratification and weighting of problem-solving courts, 2012",,,,,,,,,,
+"Report title: Census of Problem-Solving Courts, 2012 NCJ 249803",,,,,,,,,,
+"Data source: Census of Problem-Solving Courts, 2012",,,,,,,,,,
+"Authors: Suzanne M. Strong, Ph.D., and Ramona R. Rantala, Tracey Kyckelhahn, Ph.D.",,,,,,,,,,
+Refer questions to: askbjs@usdoj.gov   202-307-0765,,,,,,,,,,
+Date of version: 09/07/2016,,,,,,,,,,
+,,,,,,,,,,
+"Appendix table 21. Stratification and weighting of problem-solving courts, 2012",,,,,,,,,,
+,,,In-scope,,,,Scope unknown,,,
+Stratum,,Total,Number,Percent,,,Number,Percent,,Weight
+,All strata,"3,052","2,793",91.5,%,,259,8.5,%,…
+Drug,,"1,330","1,244",93.5,,,86,6.5,,…
+,Drug (small population),443,419,94.6,,,24,5.4,,1.057
+,Drug (medium population),444,420,94.6,,,24,5.4,,1.057
+,Drug (large population),443,405,91.4,,,38,8.6,,1.094
+Mental health,,337,311,92.3,,,26,7.7,,1.084
+Family,,261,237,90.8,,,24,9.2,,1.101
+Youth specialty,,244,203,83.2,,,41,16.8,,1.202
+Hybrid DWI/drug/a,,217,193,88.9,,,24,11.1,,1.124
+DWI,,183,179,97.8,,,4,2.2,,1.022
+Domestic violence,,170,155,91.2,,,15,8.8,,1.097
+Veterans ,,133,123,92.5,,,10,7.5,,1.081
+Tribal wellness,,31,26,83.9,,,5,16.1,,1.192
+Other/b ,,146,122,83.6,,,24,16.4,,1.197
+"Note: Courts were stratified by type. Drug courts were further stratified by population of service area, as follows: Drug (small population) included drug courts in counties with populations of 55,200 or fewer; Drug (medium population), populations between 55,201 to 219,992; and Drug (large populations), populations greater than 219,993.",,,,,,,,,,
+…Not available.,,,,,,,,,,
+a/Handles alcohol- or drug-dependent offenders also charged with a driving offense.,,,,,,,,,,
+b/Includes other courts not shown.,,,,,,,,,,
+"Source: Bureau of Justice Statistics, Census of Problem-Solving Courts, 2012.",,,,,,,,,,
