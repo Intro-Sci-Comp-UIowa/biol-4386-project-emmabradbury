@@ -1,6 +1,5 @@
 # Census of Problem-Solving Courts, 2012
-In this study, the Bureau of Justice Statistics took a census and compiled data from the US, Puerto Rico, and Guam to analyze problem solving courts. Problem solving courts were defined as courts that aim to treat underlying problems of criminal behavior instead of just punishing the criminal. This idea of alternative restorative justice has been growing in recent years and evolved to be what many in criminal justice hope is the bulk future of our justice system to heal offenders and victims and avoid the socioeconomic costs of traditional incarceration when possible. I will be focusing on reproducing the main model that shows the proportions of different types of problem solving courts. 
-
+In this study, the Bureau of Justice Statistics took a census and compiled data from the US, Puerto Rico, and Guam to analyze problem solving courts. Problem solving courts are defined as courts that aim to treat underlying problems of criminal behavior instead of just punishing the criminal. This idea of alternative restorative justice has been growing in recent years and has evolved to be what many in criminal justice hope is the bulk form of sentencing for crimes in the future. Restorative justice aims to heal offenders and victims, as well as avoid the socioeconomic costs of traditional incarceration when possible. It has a variety of models that can include counseling, mediation, community service, different types of therapy, and skill building exercises and classes. The steps taken to produce this figure included conducting researching and identifying problem-solving courts, using the National Drug Court Institute to verify courts status and find contacts within the courts to help provide information for the study. Surveys were used for courts to self-identify what their specialization was. These surveys asking courts to identify what type of specialty court they identify as and how are formally called a census. Because not every problem-solving court initially involved responded fully to the surveys, the number of each type of court was adjusted to account for the approximate number of that kind of court in existence if the 259 non-responders had followed through with the census, so that the total number of courts was the same as it would have been with the 259 non-responders. I will be focusing on reproducing the main model from the study. This model represents the sum of several different kinds of courts within the US, Puerto Rico, and Guam combined. The categories of courts compared are Drug, Mental Health, Family, Youth Specialty, Hybrid DWI/Drug, DWI, Domestic Violence, Veterans, Tribal Wellness, and Others which includes specialty categories not specifically listed.  This figure is meant to show the disproportionate amount of problem-solving courts for certain offenses versus others. While supporting figures show the benefits of restorative justice figures, I chose this one because it shows what areas of criminal justice restorative practices still need to be better implemented. 
 ## Reference
 Suzanne M. Strong, Ph.D., Ramona R. Rantala, Bureau of Justice Statistics, Tracey Kyckelhahn, Ph.D., Former BJS Statistician. September 15, 2016. NCJ 249803.
 
@@ -8,13 +7,31 @@ Suzanne M. Strong, Ph.D., Ramona R. Rantala, Bureau of Justice Statistics, Trace
 ![Figure 1]()  https://www.bjs.gov/content/pub/pdf/cpsc12.pdf
 *Sorry the image is right on that first page but I could not figure out how to insert just an image file*
 
-#### Data Availability
-All data on the correctional facilities is available on the Bureau of Justice Statistics Website in the published report as well as CSV and ASCII file format.
+This figure takes the total number of problem-solving courts found in the 2012 census study using a self-identifying survey and categorizes them into their specialties or the areas that they emphasize. The x-axis along the bottom shows the number of courts while the y-axis on the left side indicates the type(area of specialty) of problem-solving court. The a next to the category Hybrid DWI (driving while intoxicated)/drug means that the court handles alcohol or drug dependent offenders who were also charged with a driving offense/violation. The b next to the category Other includes courts that were defined as problem-solving courts and counted in the census but their specialization category was not one of the main ones studied by the Bureau of Justice Statistics. 
+
+#### Data 
+I added the data file by downloading Comma-delimited format(CSV) (Zip format 37K) file from BJS website https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 to computer and uploading on Github directly using the git push. Pulled project from github using ‘git pull’ and moved the file named ‘CPSC12 (1).zip’ to a file named bjs.zip using ‘mv’ command. Then moved bjs.zip into the data folder using the same command. Once the zipped data file was in the data folder, I unzipped the file in the terminal using 'unzip' to obtain readable csv of all data needed which resulted in 2 files, an unzipped and a zipped version of ‘bjs’. 
+Next, I looked into the readme file that is listed after all of the csv’s in the downloaded data files. The readme file described which csv’s would contain the data used for Figure 1. It listed 3 csv’s that contained relevant data for me, ‘cpsc12at21.csv’, ‘cpsc12f01.csv’, and ‘cpsc12t01.csv’. The file cpsc12at12.csv contains a table that shows and explains how the data was weighted to account for the non-responders. The file cpsc12f01.csv contains a table with the totals that are represented in Figure 1 for each type of court. The file cpsc12t01.csv contains the raw counts of each type of specialty court, separated by state in a table. This information was obtained and entered from the census but, this source does not describe how it was summed or input into the table. I moved these 3 files into the folder ‘figure1data’ so that they are easily found and observed because the other csv’s are not relevant to my project unless I get to the point of expanding it. 
+I plan to take the raw numbers of each state’s total for the different types of specialty courts in the csv cpsc12t01 and working from there to recreate Table 1. I want to use the other 2 files relevant to table 1 to ensure that I am executing the weighting math and transformation of data into totals properly. So, my data consists of quantitative numbers attributable to a category.
 
 ##### Methods
-1. Census of Problem Solving Courts information collection with survey
-2. National Drug Court Institute was used to identify state problem-solving courts and coordinators to identify courts as well as contacts.
-3. Verified courts with follow up communication.
-4. Analytic weights were calculated for each court to make up for the 259 nonresponders in the verified list.
-5. Standard errors were produced using SUDAAN Statistical Software for Analyzing Correlated Data.
-  
+Retrieve Data 
+Used Git to access and enter project ‘Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury on github. Throughout the project track, commit, and push progress to github.
+Download CSV files on what problem-solving courts from the Bureau of Justice Statistics(BJS) identified as in their area of specialty. 
+Unzip the file and use the readme to find the csv tables holding the actual counts of each type of court recorded by region of where those courts are. 
+
+Sort Data
+	Made a new folder called ‘figure1data’ and moved relevant files cpsc12at21.csv, cpsc12f01.csv, and cpsc12t01.csv into the folder for easy access using ‘mv’ function. 
+
+Write Script to Weight Data & Run(RStudio)
+	Because my data is very statistical, and my future plans may lead to more exploration of the data I will work with it mainly(if not completely) in RStudio. Import project into RStudio and access cpsc12t01.csv. Then use data transformation to sum, group, and transform data with tidyverse pipes. 
+Need to look further into appendix table 21, cpsc12at12.csv, to see actual calculations of analytical weights applied to survey(census) results and use RStudio to replicate mathematical procedure.
+
+Generate Chart Using R
+Design and input to a bar chart to recreate Figure 1 using R ‘plot’. I will need to look further into RStudio to learn how to edit the plot in R.
+
+Ensure Future Reproducibility
+	I will have to take notes as I transform my data in RStudio and update the readme as I go along. I hope to look into writing an R Script so that I could change the numerical data in the future and it would update the plot or anybody could input a similar table that would plot court census data.
+
+Future Possibility
+Make another chart showing the percentage of each type of problem-solving court available instead of the raw numbers like the figure that is being reproduced(probably using R as well). 
