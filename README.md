@@ -22,7 +22,6 @@ Unzip the file and use the readme to find the csv tables holding the actual coun
 
 Sort Data & Make workable in RStudio
 	Made a new folder called ‘figure1data’ and moved relevant files cpsc12f01.csv, and cpsc12t01.csv into the folder for easy access using ‘mv’ function. 
-
 	Because my data is very statistical, and my future plans may lead to more exploration of the data I will work with it mainly(if not completely) in RStudio. Import project into RStudio and access cpsc12t01.csv. Then use data transformation to change the format of the csv into a workable matrix in RStudio, isolate the raw data or reported types of courts in each state, turn that data into vectors and sum the state counts for total counts of each type of court. 
 
 Generate Bar Chart Using R
