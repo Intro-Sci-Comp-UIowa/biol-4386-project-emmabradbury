@@ -3,32 +3,32 @@ In this study, the Bureau of Justice Statistics took a census and compiled data 
 ## Reference
 Suzanne M. Strong, Ph.D., Ramona R. Rantala, Bureau of Justice Statistics, Tracey Kyckelhahn, Ph.D., Former BJS Statistician. September 15, 2016. NCJ 249803.
 
-### Figure to Reproduce 
+## Figure to Reproduce 
 ![Figure 1]()  https://www.bjs.gov/content/pub/pdf/cpsc12.pdf
 *Sorry the image is right on that first page but I could not figure out how to insert just an image file*
 
 This figure takes the total number of problem-solving courts found in the 2012 census study using a self-identifying survey and categorizes them into their specialties or the areas that they emphasize. The x-axis along the bottom shows the number of courts while the y-axis on the left side indicates the type(area of specialty) of problem-solving court. The a next to the category Hybrid DWI (driving while intoxicated)/drug means that the court handles alcohol or drug dependent offenders who were also charged with a driving offense/violation. The b next to the category Other includes courts that were defined as problem-solving courts and counted in the census but their specialization category was not one of the main ones studied by the Bureau of Justice Statistics. 
 
-#### Data 
+## Data 
 I added the data file by downloading Comma-delimited format(CSV) (Zip format 37K) file from BJS website https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 to computer and uploading on Github directly using the git push. Pulled project from github using ‘git pull’ and moved the file named ‘CPSC12 (1).zip’ to a file named bjs.zip using ‘mv’ command. Then moved bjs.zip into the data folder using the same command. Once the zipped data file was in the data folder, I unzipped the file in the terminal using 'unzip' to obtain readable csv of all data needed which resulted in 2 files, an unzipped and a zipped version of ‘bjs’. 
 Next, I looked into the readme file that is listed after all of the csv’s in the downloaded data files. The readme file described which csv’s would contain the data used for Figure 1. It listed 2 csv’s that contained relevant data for me ‘cpsc12f01.csv’, and ‘cpsc12t01.csv’.  The file cpsc12f01.csv contains a table with the totals that are represented in Figure 1 for each type of court. The file cpsc12t01.csv contains the raw counts of each type of specialty court, separated by state in a table. This information was obtained and entered from the census but, this source does not describe how it was summed or input into the table. I moved these 2 files into the folder ‘figure1data’ so that they are easily found and observed because the other csv’s are not relevant to my project unless I get to the point of expanding it. 
 I plan to take the raw numbers of each state’s total for the different types of specialty courts in the csv cpsc12t01 and working from there to recreate Table 1. I want to use the other 2 files relevant to table 1 to ensure that I am executing the weighting math and transformation of data into totals properly. So, my data consists of quantitative numbers attributable to a category.
 
-##### Methods
-Retrieve Data 
-Used Git to access and enter project ‘Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury on github. Throughout the project track, commit, and push progress to github.
-Download CSV files on what problem-solving courts from the Bureau of Justice Statistics(BJS) identified as in their area of specialty. 
-Unzip the file and use the readme to find the csv tables holding the actual counts of each type of court recorded by region of where those courts are. 
+## Methods
+### Retrieve Data 
+- Used Git to access and enter project ‘Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury on github. Throughout the project track, commit, and push progress to github.
+- Download CSV files on what problem-solving courts from the Bureau of Justice Statistics(BJS) identified as in their area of specialty. 
+- Unzip the file and use the readme to find the csv tables holding the actual counts of each type of court recorded by region of where those courts are. 
 
-Sort Data & Make workable in RStudio
-	Made a new folder called ‘figure1data’ and moved relevant files cpsc12f01.csv, and cpsc12t01.csv into the folder for easy access using ‘mv’ function. 
-	Because my data is very statistical, and my future plans may lead to more exploration of the data I will work with it mainly(if not completely) in RStudio. Import project into RStudio and access cpsc12t01.csv. Then use data transformation to change the format of the csv into a workable matrix in RStudio, isolate the raw data or reported types of courts in each state, turn that data into vectors and sum the state counts for total counts of each type of court. 
+### Sort Data & Make workable in RStudio
+- Made a new folder called ‘figure1data’ and moved relevant files cpsc12f01.csv, and cpsc12t01.csv into the folder for easy access using ‘mv’ function. 
+- Because my data is very statistical, and my future plans may lead to more exploration of the data I will work with it mainly(if not completely) in RStudio. Import project into RStudio and access cpsc12t01.csv. Then use data transformation to change the format of the csv into a workable matrix in RStudio, isolate the raw data or reported types of courts in each state, turn that data into vectors and sum the state counts for total counts of each type of court. 
 
-Generate Bar Chart Using R
-	Design and input to a bar chart to recreate Figure 1 using R ‘plot’. I will need to look further into RStudio to learn how to edit the plot in R.
+### Generate Bar Chart Using R
+- Design and input to a bar chart to recreate Figure 1 using R ‘plot’. I will need to look further into RStudio to learn how to edit the plot in R.
 
-Write a Script 
-	Ensure Future Reproducibility by writing a script to run the isolated Courts By State CSV with any change of numbers to create a bar chart.  
-	I have taken notes as I transform my data in RStudio. It took a lot longer than I hoped to analyse and make the data workable/ get comfortable using R. I've forgotten to transform things I have done in R a couple times to a permanently saved version and not just the experimental environment, which has been a process itself. I think I can move forward by improving my figure and then writing an R Script so that I can change the numerical data in the future and it will update the plot or anybody could input a similar table that would plot court census data.
+### Write a Script 
+- Ensure Future Reproducibility by writing a script to run the isolated Courts By State CSV with any change of numbers to create a bar chart.  
+- I have taken notes as I transform my data in RStudio. It took a lot longer than I hoped to analyse and make the data workable/ get comfortable using R. I've forgotten to transform things I have done in R a couple times to a permanently saved version and not just the experimental environment, which has been a process itself. I think I can move forward by improving my figure and then writing an R Script so that I can change the numerical data in the future and it will update the plot or anybody could input a similar table that would plot court census data.
 
 
