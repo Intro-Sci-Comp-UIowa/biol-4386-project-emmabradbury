@@ -1,2 +1,11 @@
-"Domestic Violence","Drug","DWI","DWI/drug/a","Family","Mental Health","Other/b","Tribal Wellness","Veterans","Youth Specialty"
-170,1330,183,217,261,337,146,31,133,244
+Type of Court,Number of Courts
+Drug,1330
+Mental Health,337
+Family,261
+Youth Specialty,244
+Hybrid DWI/drugs/a,217
+DWI,183
+Domestic Violence,170
+Veterans,133
+Tribal Wellness,31
+Other/b,146
