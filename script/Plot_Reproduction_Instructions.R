@@ -12,5 +12,5 @@ setwd("~/biol-4386-project-emmabradbury")
 data <- read.csv(file = 'analysis/court_totals.csv')
 
 # Here is where you could add to or edit the numbers in the dataset if needed
-# Create plot
-# 
+# Load tidyverse package to use ggplot2
+library(tidyverse)
