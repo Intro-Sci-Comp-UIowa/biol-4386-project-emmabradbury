@@ -1,4 +1,5 @@
 # Instructions to Reproduce Figure 1- Court Totals
+# Open R Studio
 # Go to https://github.com/Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury
 # "Clone or Download" the repository to your R environment
 git clone https://github.com/Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury.git
