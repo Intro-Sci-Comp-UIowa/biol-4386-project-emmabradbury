@@ -36,3 +36,5 @@ ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))
 ```x + geom_bar(stat = "identity") + coord_flip()```
 ```x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1/Problem-solving courts, 2012")```
 ```x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012")```
+```figure1 <- x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012") + ylab("Number of courts") + xlab("Type of court")```
+
