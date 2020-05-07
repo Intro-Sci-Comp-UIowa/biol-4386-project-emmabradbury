@@ -7,34 +7,24 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
 1. Load court_totals.csv as a dataframe
 ```data <- as.data.frame(read.csv("analysis/court_totals.csv"))```
-2. Make base graph
-ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))
+
+2. Make first layer of exterior graph
+```ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))```
+
+3. Assign first layer of figure to variable
 ```x <- ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))```
+
+4. Map the values and type of plot
 ```x + geom_bar(stat = "identity")```
+
+5. Turn the bar plot horizontal
 ```x + geom_bar(stat = "identity") + coord_flip()```
-```x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1/Problem-solving courts, 2012")```
+
+6. Add red color to bars and the title of the graph
 ```x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012")```
-```figure1 <- x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012") + ylab("Number of courts") + xlab("Type of court")```
+
+7. Assign progress on bar plot as basefigure to simplify future edits
+```basefigure <- x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012") + ylab("Number of courts") + xlab("Type of court")```
 
