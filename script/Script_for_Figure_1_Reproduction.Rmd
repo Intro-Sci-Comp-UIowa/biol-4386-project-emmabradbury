@@ -1,14 +1,9 @@
 ---
-title: "script_for_final_plot"
+title: "Instructions to Reproduce Figure 1"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-#Instructions to Reproduce Figure 1- Court Totals
-
-##Setting up your environment for ggplot to reproduce Figure 1
+# Setting up your environment for ggplot to reproduce Figure 1
 
 Open R Studio
 
@@ -29,8 +24,10 @@ Import the dataset to global environment
 *Here is where you could add to or edit the numbers in the dataset if needed*
 
 Load tidyverse package to use ggplot2
-library(tidyverse)
-##Steps for creating plot
+```library(tidyverse)```
+
+## Steps for creating plot
+
 1. Load court_totals.csv as a dataframe
 ```data <- as.data.frame(read.csv("analysis/court_totals.csv"))```
 
