@@ -8,7 +8,7 @@ If your goal is to just create the image and work on it from the data in github(
 Load tidyverse package to use ggplot2
 ```library(tidyverse)```
 
-## Steps for creating plot
+## Steps for Creating Plot
 
 1. Load court_totals.csv as a dataframe
 ```data <- as.data.frame(read.csv("analysis/court_totals.csv"))```
