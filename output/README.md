@@ -1,4 +1,4 @@
-#Overview
+# Overview
 
 This output folder of this project is focused on how to create the actual Figure and shows what you should end up with. 
 The bar_plot folder contains the iage version of Figure 1, titled figure_1.png.
