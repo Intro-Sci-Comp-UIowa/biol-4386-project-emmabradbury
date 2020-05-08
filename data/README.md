@@ -1,2 +1,23 @@
-Data was obtained from https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 on February 14, 2020 through prior research. It should be downloaded as a CSV but I will be going to office hours or asking for help if I did not do it right. Will work more on it this weekend and see if I can figure it out better and download the rest of the data. 
-Added data file by downloading Comma-delimited format(CSV) (Zip format 37K) file from BJS website https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 to computer and uploading on Github directly using the upload button on the tool bar. Pulled project from github using ‘git pull’ and moved the file named ‘CPSC12 (1).zip’ to a file named bjs.zip using ‘mv’ command. The moved bjs.zip into the data folder using the same command. Once the zipped data file was in the data folder, I unzipped the file in the terminal using 'unzip' to obtain readable csv of all data needed which resulted in 2 files, an unzipped and a zipped version of bjs.
+Data was obtained from https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 on February 14, 2020 through prior research. 
+Added data file by downloading Comma-delimited format(CSV) (Zip format 37K) file from BJS website https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5744 to computer 
+
+Open RStudio 
+
+Go to https://github.com/Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury
+
+"Clone or Download" the repository to your R environment
+File > New Project > Version Control > Git. In “Repository URL”, paste the URL of the following GihHub repository:
+https://github.com/Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury.git
+
+*Description of all materials in the repository and the original project found under README.md*
+
+Set Working Directory to biol-4386-project-emmabradbury
+```setwd("~/biol-4386-project-emmabradbury")```
+
+Use R files tab pane to rename the downloaded file CPSC12(1).zip to bjs.zip
+
+unzip the data 
+```unzip(bjs.zip)```
+Now you will have a bjs.csv folder
+
+Use R files tab pane option More->Move... to move bjs.zip to data into the data folder
