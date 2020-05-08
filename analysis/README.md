@@ -36,8 +36,16 @@ Take the totals calculated and make those a vector in the same order/position as
 Combine the vectors 
 ```court_totals <- cbind(`Type of Court`, `Number of Courts`)```
 
+Save court totals as a csv file and move it under the analysis folder
+```write.csv(court_totals, 'court_totals.csv')```
+Click it's box-> More-> Move-> click analysis folder
 
+Bring this csv into the global environment
+Click on court_totals.csv-> Import Dataset... In the import text data box under data priview, make sure to click on the first column header 'X1' and click the option 'skip'
 
+***Remove the extra column if you forget to skip it in import***
+```court_totals$X1 <- NULL```
 
-turned the totaling vectors into a csv called court_totals.csv. L
-oaded the csv as a data frame into R and then read that data frame as a matrix to plot the bar chart under bar_plot in Output folder.
+Set this to a dataframe called data to move onto output/actually creating the figure now that the data is set to be workable in long format in R ggplot.
+```data <- as.data.frame(court_totals)```
+
