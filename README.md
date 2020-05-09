@@ -29,7 +29,7 @@ Finally, the output was created using ggplot under the library(tidyverse) in RSt
 
 **Results and Discussion**
 
-This is the figure I produced. The main take away from this figure is that there is a disproportionate amount of Drug Problem-solving courts in the study than the other specialty courts. The x-axis displays a scale to show the approximate number of each type of courts according to where the bar lines up and the y-axis displays the different types of courts being represented by each bar. 
+The figure produced can be viewed in the output folder in bar_plot folder under figure_1.png. The main take away from this figure is that there is a disproportionate amount of Drug Problem-solving courts in the study than the other specialty courts. The x-axis displays a scale to show the approximate number of each type of courts according to where the bar lines up and the y-axis displays the different types of courts being represented by each bar. 
 The large differences between my Figure 1 and the original Figure 1 from the study are as follows:
 •	The labels on the actual bars denoting the total number of that type of court in the study are missing.
 •	The court names are out of order but that does not take away from the general meaning of the plot and you can still see the difference in the what types of courts exist and which ones may need more representation/could be expanded. 
