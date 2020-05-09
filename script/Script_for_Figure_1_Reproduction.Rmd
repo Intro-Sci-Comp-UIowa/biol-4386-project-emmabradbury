@@ -16,36 +16,55 @@ https://github.com/Intro-Sci-Comp-UIowa/biol-4386-project-emmabradbury.git
 *Description of all materials in the repository and the original project found under README.md*
 
 Set Working Directory to biol-4386-project-emmabradbury
-```setwd("~/biol-4386-project-emmabradbury")```
+```{r}
+setwd("~/biol-4386-project-emmabradbury")
+```
 
 Import the dataset to global environment
-```data <- read.csv(file = 'analysis/court_totals.csv')```
+```{r}
+data <- read.csv(file = 'analysis/court_totals.csv')
+```
 
 *Here is where you could add to or edit the numbers in the dataset if needed*
 
 Load tidyverse package to use ggplot2
-```library(tidyverse)```
+```{r}
+library(tidyverse)
+```
 
 ## Steps for creating plot
 
 1. Load court_totals.csv as a dataframe
-```data <- as.data.frame(read.csv("analysis/court_totals.csv"))```
+```{r}
+data <- as.data.frame(read.csv("analysis/court_totals.csv"))
+```
 
 2. Make first layer of exterior graph
-```ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))```
+```{r}
+ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))
+```
 
 3. Assign first layer of figure to variable
-```x <- ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))```
+```{r}
+x <- ggplot(data, aes(x = Type.of.Court, y = Number.of.Courts))
+```
 
 4. Map the values and type of plot
-```x + geom_bar(stat = "identity")```
+```{r}
+x + geom_bar(stat = "identity")
+```
 
 5. Turn the bar plot horizontal
-```x + geom_bar(stat = "identity") + coord_flip()```
+```{r}
+x + geom_bar(stat = "identity") + coord_flip()
+```
 
 6. Add red color to bars and the title of the graph
-```x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012")```
+```{r}
+x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012")
+```
 
 7. Assign progress on bar plot as basefigure to simplify future edits
-```basefigure <- x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012") + ylab("Number of courts") + xlab("Type of court")```
-
+```{r}
+basefigure <- x + geom_bar(stat = "identity", color = " dark red", fill = "dark red") + coord_flip() + ggtitle("Figure 1", subtitle = "Problem-solving courts, 2012") + ylab("Number of courts") + xlab("Type of court")
+```
